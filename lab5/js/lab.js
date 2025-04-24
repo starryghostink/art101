@@ -2,21 +2,7 @@
 // Author: Chris Lam
 // Date: 4/23/2025
 
-// Define Variables 
-make = "Audi";
-model = "Q5";
-color = "forest green";
-year = 2021;
 
-// calculate
-age = 2025 - year;
-
-// output 
-document.writeln("Make: " + make + "<br>");
-document.writeln("Model: " + model + "<br>");
-document.writeln("Color: " + color + "<br>");
-document.writeln("Year: " + year + "<br>");
-document.writeln("Age: " + age + " years<br>");
 
 
 
@@ -36,7 +22,21 @@ function myFunction(param1, param2) {
 
 function main() {
   console.log("Main function started.");
-  // the code that makes everything happen
+  // Define Variables 
+  make = "Audi";
+  model = "Q5";
+  color = "forest green";
+  year = 2021;
+
+  // calculate
+  age = 2025 - year;
+
+  // output 
+  document.writeln("Make: " + make + "<br>");
+  document.writeln("Model: " + model + "<br>");
+  document.writeln("Color: " + color + "<br>");
+  document.writeln("Year: " + year + "<br>");
+  document.writeln("Age: " + age + " years<br>");
 }
 
 // let's get this party started
