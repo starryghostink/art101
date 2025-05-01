@@ -13,22 +13,22 @@ function myFunction(param1, param2) {
 }
 
 console.log("The code is running!") 
-
+// array of numbers
 iamsteve = [2,5,9,2,1902801842,80214]
 function yippee(chickenjockey) {
   let equation = chickenjockey*2
       return equation;
 }
-
+// using map on array
 iamsteve.map(yippee)
-
+// new anonymous function
 iamsteve.map(
   function(flintsteel){
       let result = flintsteel + 4;
       return result;
   }
 )
-
+// variable to results
 netherite2 = iamsteve.map(yippee);
 console.log("Results:",netherite2)
 
