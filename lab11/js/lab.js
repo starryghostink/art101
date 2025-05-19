@@ -1,6 +1,6 @@
-// index.js - purpose and description here
+// index.js - to create an event and form
 // Author: Chris Lam
-// Date: 4/30/25
+// Date: 5/18/25
 
 // Constants
 
@@ -11,4 +11,33 @@ function myFunction(param1, param2) {
   // some code here
   // return results;
 }
+// personName - function that takes the person's name and sorts the letters alphabetically 
+function personName() {
+  let userName = window.prompt("I wanna sort your name alphabetically.");
+  console.log("userName =", userName);
+  // turn name to lowercase
+  userName = userName.toLowerCase();
+  // spliting string to array
+  let letterArray = userName.split("");
+  // sorting array
+  letterArray = letterArray.sort();
+  // joining array to string again
+  let namesort = letterArray.join("");
+  console.log("namesort =", namesort);
+  // return the name string
+  return namesort;
 
+}
+
+// event listener
+  $("#enter").click(function(){
+  // value
+const yourName = $("#your-name").val();
+
+// sorting
+  let yourNameSorted = personName(yourName);
+
+// append new div to output
+  $("#output").html('<div class="text"><p>' + yourNameSorted + '</p></div>');
+
+});
