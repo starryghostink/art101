@@ -31,8 +31,8 @@ function personName() {
 
 // event listener
   $("#enter").click(function(){
-  // value
-const yourName = $("#your-name").val();
+// value
+  const yourName = $("#your-name").val();
 
 // sorting
   let yourNameSorted = personName(yourName);
