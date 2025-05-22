@@ -12,8 +12,7 @@ function myFunction(param1, param2) {
   // return results;
 }
 // personName - function that takes the person's name and sorts the letters alphabetically 
-function personName() {
-  let userName = window.prompt("I wanna sort your name alphabetically.");
+function personName(userName) {
   console.log("userName =", userName);
   // turn name to lowercase
   userName = userName.toLowerCase();
@@ -30,14 +29,14 @@ function personName() {
 }
 
 // event listener
-  $("#enter").click(function(){
-// value
-  const yourName = $("#your-name").val();
+$("#enter").click(function(){
+  // value
+    const yourName = $("#your-name").val();
 
-// sorting
-  let yourNameSorted = personName(yourName);
+  // sorting
+    let yourNameSorted = personName(yourName);
 
-// append new div to output
-  $("#output").html('<div class="text"><p>' + yourNameSorted + '</p></div>');
+  // append new div to output
+    $("#output").html('<div class="text"><p>' + yourNameSorted + '</p></div>');
 
-});
+})
